@@ -2,7 +2,7 @@
 #       script_name: 03.fitMedia-insertMedia-makeBeat.py 
 #       version/date: 20220426
 #
-#		author: Fernando Sanchez 
+#       author: Fernando Sanchez 
 #
 #       description: 
 #       - fitMedia on one track
