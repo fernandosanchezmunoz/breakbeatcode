@@ -1,10 +1,10 @@
-#		BreakBeatCode example Day 3 lesson
-#		script_name: 03.fitMedia-insertMedia-makeBeat.py 
+#       BreakBeatCode example Day 3 lesson
+#       script_name: 03.fitMedia-insertMedia-makeBeat.py 
 #       version/date: 20220426
 #
 #		author: Fernando Sanchez 
 #
-#		description: 
+#       description: 
 #       - fitMedia on one track
 #       - fitMedia on multiple tracks
 #       - makeBeat
