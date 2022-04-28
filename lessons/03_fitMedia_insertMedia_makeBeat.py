@@ -5,9 +5,10 @@
 #       author: Fernando Sanchez 
 #
 #       description: 
-#       - fitMedia on one track
-#       - fitMedia on multiple tracks
-#       - makeBeat
+#       - fitMedia() on one track
+#       - fitMedia() on multiple tracks
+#       - insertMedia()
+#       - makeBeat()
 #
 
 # Anything after a hashtag is a Comment
