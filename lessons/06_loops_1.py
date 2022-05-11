@@ -13,7 +13,10 @@ from earsketch import *
 
 init()                              #in latest version this is not required
 
-setTempo(120)                       #set Tempo to 120 Beats Per Minute (BPM)
+my_tempo = readInput("What tempo would you like to use?") #readInput returns a string
+# TODO: Add input validation to ensure mytempo is a number
+my_tempo_int = int(my_tempo)
+setTempo(my_tempo_int)                       #set Tempo to 120 Beats Per Minute (BPM)
 
 
 ### Start with a beat, a bass and a vocal
@@ -42,39 +45,17 @@ fitMedia( vocal1, track, start, end  )
 #### Now I'd like to insert a vocal drop
 
 track = 4
-start = 9
+insert_point = 7
 
 vocal_drop_1 = YG_HIP_HOP_VOX_1
 #vocal_drop_2 = YG_TRAP_VOX_1
 
-insertMedia(vocal_drop_1, track, start )
+insertMedia(vocal_drop_1, track, insert_point )
 
 # Now I'd like to inser this every two measures
-#start = start + 2 #"start" is now 11
-#insertMedia(vocal_drop_1, track, start )
-
-#start = start + 2 #"start" is now 13
-#insertMedia(vocal_drop_1, track, start )
-
-#start = start + 2 #"start" is now 15
-#insertMedia(vocal_drop_1, track, start )
-
-#start = start + 2 #"start" is now 17
-#insertMedia(vocal_drop_1, track, start )
-
-#start = start + 2 #"start" is now 19
-#insertMedia(vocal_drop_1, track, start )
-
-##How can we make this with a simple loop?
-
-
-
-
-
-
-#while start < end:
-#	start = start + 2 #"start" increases two every pass of the loop
-#	insertMedia(vocal_drop_1, track, start )
+while ( insert_point < end ):
+    insertMedia(vocal_drop_1, track, insert_point )
+    insert_point = insert_point + 2 #"insert_point" is increased in every loop pass
 
 finish()
 
